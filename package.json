@@ -2,10 +2,16 @@
   "name": "Kotar",
   "version": "2017.03.001.001",
   "dependencies": {
+    "angular-ui-router": "^0.4.2",
     "body-parser": "^1.17.0",
     "express": "^4.15.0",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
     "method-override": "^2.3.7",
     "morgan": "^1.8.1",
-    "path": "^0.12.7"
+    "node-webcam": "^0.3.4",
+    "path": "^0.12.7",
+    "webcamjs": "^1.0.22",
+    "window": "^3.1.2"
   }
 }

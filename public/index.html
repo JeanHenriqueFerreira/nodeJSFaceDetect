@@ -1,16 +1,27 @@
 <html lang="pt-BR">
-    <head>
-        <title>Kotar</title>
-        <meta charset="UTF-8">
-        <!-- Angular -->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-        <!--scripts-->
-        <script src="./javascript/index.js"> </script>
-    </head>
-    <body ng-app="Kotar">
-        kotar
-        <input type="text" ng-model="batata"/>{{batata}}
-          <p>Name : <input type="text" ng-model="name"></p>
-          <h1>Hello {{name}}</h1>
-    </body>
+
+<head>
+  <title>FaceDetect NodeJS</title>
+  <meta charset="UTF-8">
+  <!-- Angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script type="text/javascript" src="./javascript/angular/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="./javascript/angular/webcam.min.js"></script>
+
+  <!-- project -->
+  <!--scripts-->
+  <script type="text/javascript" src="./javascript/index.js"></script>
+  <script type="text/javascript" src="./javascript/controllers/detection.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href=" ./css/style.css "></link>
+</head>
+
+<body ng-app="FaceDetect">
+  <div ui-view="login"></div>
+  <div ui-view="cabecalho"></div>
+  <div ui-view="menu"></div>
+  <ui-view name="conteudo"></ui-view>
+  <div ui-view="subtitulo"></div>
+</body>
+
 </html>
